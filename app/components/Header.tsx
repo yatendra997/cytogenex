@@ -74,7 +74,7 @@ export default function Header() {
         >
             {/* Top spacing to push nav items down like Clinnex */}
             <div className="w-full mx-auto px-4 md:px-8 lg:px-16 xl:px-[100px] h-full">
-                <div className="flex items-center md:items-end justify-between h-full">
+                <div className="flex items-center justify-between h-full">
                     {/* Logo - far left */}
                     <Link href="/" className="flex items-center">
                         <div className="relative w-[160px] md:w-[210px] h-[46px] md:h-[60px]">

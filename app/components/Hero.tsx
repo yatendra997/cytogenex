@@ -22,7 +22,7 @@ export default function Hero() {
                 <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-b from-transparent to-[#0C2364]/40 z-[1]" />
 
                 {/* Hero Content — anchored to bottom */}
-                <div className="relative z-10 flex flex-col items-center px-[15px] w-full max-w-[1240px] text-center pb-52">
+                <div className="relative z-10 flex flex-col items-center px-[15px] w-full max-w-[1240px] text-center pb-32 lg:pb-24">
                     <p className="text-white uppercase tracking-[3px] md:tracking-[6px] text-[14px] md:text-[16px] mb-5 font-medium text-center drop-shadow-md">
                         Scientific Evidence. Clear Communication. Global Impact.
                     </p>
@@ -33,7 +33,7 @@ export default function Hero() {
 
                     <div>
                         <Link
-                            href="#services"
+                            href="/services"
                             className="px-8 py-3 rounded-[30px] text-[15px] font-semibold border border-[#1796CF] bg-[#1796CF] text-white hover:bg-[#0C2364] hover:text-white transition-colors duration-300 uppercase block w-full md:w-auto text-center"
                         >
                             Explore Our Services
@@ -42,8 +42,8 @@ export default function Hero() {
                 </div>
             </section>
 
-            {/* Cards overlap the very bottom of the hero on scroll */}
-            <div className="relative z-20 w-full -mt-20">
+            {/* Cards below the hero */}
+            <div className="relative z-20 w-full bg-gray-50 pt-10">
                 <HomeCards />
             </div>
 
@@ -52,30 +52,12 @@ export default function Hero() {
 
                     {/* Section heading */}
                     <div className="text-left md:text-center mb-16">
-                        <span className="inline-block bg-[#1796CF]/10 text-[#1796CF] text-xs font-bold uppercase tracking-[3px] px-4 py-2 rounded-full mb-5">
-                            Why Cytogenex
-                        </span>
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#0B1521] leading-tight mb-5">
                             Turning Data Into <span className="text-[#1796CF]">Scientific Impact</span>
                         </h2>
                         <p className="text-[#5B5B5B] text-lg max-w-3xl mx-auto leading-relaxed">
                             Cytogenex is a specialized medical communication company. We help pharmaceutical, biotech, and medical device companies transform complex clinical data into publication-ready content that resonates globally.
                         </p>
-                    </div>
-
-                    {/* Stats row */}
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
-                        {[
-                            { value: '25+', label: 'Global Clients' },
-                            { value: '400+', label: 'Projects Delivered' },
-                            { value: '7+', label: 'Therapeutic Areas' },
-                            { value: '24h', label: 'Response Time' },
-                        ].map((stat, i) => (
-                            <div key={i} className="bg-white border border-gray-100 rounded-2xl p-6 text-center shadow-sm">
-                                <div className="text-3xl md:text-4xl font-extrabold text-[#1796CF] mb-1">{stat.value}</div>
-                                <div className="text-sm font-semibold text-[#5B5B5B] uppercase tracking-wider">{stat.label}</div>
-                            </div>
-                        ))}
                     </div>
 
                     {/* Feature cards */}
