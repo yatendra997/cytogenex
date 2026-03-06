@@ -1,6 +1,5 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { Users, CheckCircle, Search, FileText } from 'lucide-react';
 
 const statsData = [
@@ -39,12 +38,8 @@ export default function Stats() {
 
             <div className="container mx-auto px-10 md:px-8 lg:px-16 relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between space-y-12 md:space-y-0">
                 {statsData.map((stat, index) => (
-                    <motion.div
+                    <div
                         key={index}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: index * 0.1 }}
                         className="flex flex-row items-center space-x-6 md:space-x-4 w-full md:w-1/4 px-0 md:px-2"
                     >
                         <div className="w-[60px] h-[60px] md:w-14 md:h-14 rounded-full bg-[#1796CF] flex items-center justify-center shrink-0 shadow-lg">
@@ -54,7 +49,7 @@ export default function Stats() {
                             <div className="text-[32px] md:text-3xl font-bold tracking-tight mb-1 md:mb-0.5 leading-none">{stat.value}</div>
                             <div className="text-[12px] md:text-[10px] lg:text-[11px] uppercase font-bold text-white/90 leading-snug tracking-wider">{stat.label}</div>
                         </div>
-                    </motion.div>
+                    </div>
                 ))}
             </div>
         </section>

@@ -8,8 +8,36 @@ import ContactSidebar from './components/ContactSidebar';
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
-  title: 'Cytogenex - A Contract Research Organization',
-  description: 'Cytogenex is a contract research organization dedicated to providing comprehensive biometrics services.',
+  title: {
+    default: 'Cytogenex | Medical Communication & Scientific Publications',
+    template: '%s | Cytogenex',
+  },
+  description: 'Cytogenex is a specialized medical communication company providing high-quality scientific publications, medical writing, and literature reviews to pharmaceutical, biotechnology, and medical device companies worldwide.',
+  keywords: [
+    'medical writing', 'scientific publications', 'medical communication', 'clinical trial publications',
+    'pharmaceutical writing', 'manuscript development', 'literature review', 'abstract writing',
+    'regulatory writing', 'publication planning', 'Cytogenex', 'Bangalore'
+  ],
+  authors: [{ name: 'Cytogenex', url: 'https://cytogenex.com' }],
+  creator: 'Cytogenex',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://cytogenex.com',
+    siteName: 'Cytogenex',
+    title: 'Cytogenex | Medical Communication & Scientific Publications',
+    description: 'Specialized medical communication company delivering high-quality scientific publications and medical writing support globally.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Cytogenex | Medical Communication & Scientific Publications',
+    description: 'Specialized medical communication company delivering high-quality scientific publications and medical writing support globally.',
+  },
 };
 
 export default function RootLayout({

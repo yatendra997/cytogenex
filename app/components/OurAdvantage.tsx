@@ -1,6 +1,5 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -11,11 +10,7 @@ export default function OurAdvantage() {
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
 
                     {/* Left: Image Content (matching Clinnex) */}
-                    <motion.div
-                        initial={{ opacity: 0, x: -40 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
-                        transition={{ duration: 0.6 }}
+                    <div
                         className="w-full lg:w-1/2 flex justify-center"
                     >
                         <div className="relative w-full max-w-md aspect-square">
@@ -27,14 +22,10 @@ export default function OurAdvantage() {
                                 sizes="(max-width: 768px) 100vw, 50vw"
                             />
                         </div>
-                    </motion.div>
+                    </div>
 
                     {/* Right: Text Content */}
-                    <motion.div
-                        initial={{ opacity: 0, x: 40 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
-                        transition={{ duration: 0.6 }}
+                    <div
                         className="w-full lg:w-1/2"
                     >
                         <h4 className="text-[#1796CF] font-bold text-base mb-3">Our Advantage</h4>
@@ -63,11 +54,11 @@ export default function OurAdvantage() {
 
                         <Link
                             href="/about"
-                            className="inline-block px-8 py-2.5 rounded-full text-[14px] font-semibold border border-[#1796CF] text-[#1796CF] hover:bg-[#1796CF] hover:text-white transition-all duration-300"
+                            className="inline-block px-8 py-2.5 rounded-full text-[14px] font-semibold border border-[#1796CF] text-[#1796CF] transition-all duration-300"
                         >
                             Know More
                         </Link>
-                    </motion.div>
+                    </div>
 
                 </div>
             </div>

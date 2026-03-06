@@ -1,5 +1,11 @@
+import type { Metadata } from 'next';
 import PageBanner from '../components/PageBanner';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+    title: 'About Us',
+    description: 'Learn about Cytogenex — a specialized medical communication company providing scientific publications, medical writing, and publication management services to global pharma and biotech companies.',
+};
 
 export default function AboutPage() {
     return (
@@ -10,25 +16,20 @@ export default function AboutPage() {
             />
 
             <section className="py-24">
-                <div className="container mx-auto px-4 md:px-8">
+                <div className="container mx-auto px-4 md:px-8 max-w-[1240px]">
                     <div className="flex flex-col lg:flex-row gap-16 items-center">
                         <div className="lg:w-1/2">
-                            <h4 className="text-[#1796CF] font-bold text-lg mb-4">Cytogenex Story</h4>
-                            <h2 className="text-3xl md:text-4xl font-extrabold text-[#0B1521] mb-6">Advancing Clinical Research Through Precision</h2>
+                            <h4 className="text-[#1796CF] font-bold text-lg mb-4 uppercase">Specialized Expertise</h4>
+                            <h2 className="text-3xl md:text-4xl font-extrabold text-[#0B1521] mb-6">Scientific Publications</h2>
                             <p className="text-[#5B5B5B] text-lg leading-relaxed mb-6">
-                                We are a contract research organization dedicated to providing comprehensive biometrics services including Clinical Data Management, Statistical Analysis and Medical Writing.
+                                Cytogenex focuses exclusively on medical communication and scientific publications, allowing us to provide specialized expertise and consistent quality.
+                            </p>
+                            <p className="text-[#5B5B5B] text-lg leading-relaxed mb-6">
+                                We support clients throughout the publication lifecycle, from early publication planning through journal submission and post-publication support.
                             </p>
                             <p className="text-[#5B5B5B] text-lg leading-relaxed mb-8">
-                                We work within a partnership model where you receive clear benefit from our domain expertise, project management experience, global reach, quality systems approach and multi-disciplinary data management capabilities.
+                                Our teams understand journal requirements, publication guidelines, and author expectations, enabling smooth and efficient publication development.
                             </p>
-                            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                {["Quality Focus", "Clinical Practice", "Optimized Productivity", "Customer Centric Approach"].map((item, idx) => (
-                                    <li key={idx} className="flex items-center text-[#0B1521] font-semibold">
-                                        <span className="w-2 h-2 rounded-full bg-[#1796CF] mr-3" />
-                                        {item}
-                                    </li>
-                                ))}
-                            </ul>
                         </div>
                         <div className="lg:w-1/2 w-full aspect-[4/3] relative rounded-2xl overflow-hidden shadow-2xl">
                             <Image
@@ -46,25 +47,51 @@ export default function AboutPage() {
             </section>
 
             <section className="py-24 bg-gray-50 border-t border-gray-100">
-                <div className="container mx-auto px-4 md:px-8">
-                    <div className="text-center mb-16">
-                        <h4 className="text-[#1796CF] font-bold text-lg mb-4">Leadership</h4>
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-[#0B1521]">Our Team</h2>
-                        <p className="text-[#5B5B5B] mt-4 max-w-2xl mx-auto text-lg">Meet the dedicated professionals leading our clinical research initiatives and driving innovation across all phases.</p>
-                    </div>
+                <div className="container mx-auto px-4 md:px-8 max-w-[1240px]">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {[1, 2, 3, 4].map((member) => (
-                            <div key={member} className="bg-white p-8 rounded-xl shadow-sm text-center border border-gray-100 flex flex-col items-center hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
-                                <div className="w-32 h-32 rounded-full bg-gray-100 mb-6 flex items-center justify-center text-gray-400 border-4 border-white shadow-inner">
-                                    <span className="text-sm font-medium tracking-wide">Photo Later</span>
-                                </div>
-                                <h3 className="text-xl font-bold text-[#0F264D] mb-2 tracking-tight">Team Member {member}</h3>
-                                <p className="text-[#1796CF] font-bold text-sm uppercase mb-4 tracking-wider">Position Title</p>
-                                <div className="w-10 h-1 bg-gray-200 mb-4 rounded-full" />
-                                <p className="text-[#5B5B5B] text-sm leading-relaxed">Dedicated clinical professional focused on excellence, patient safety, and precision in biometrics.</p>
-                            </div>
-                        ))}
+                        {/* Team Section */}
+                        <div className="bg-white p-10 rounded-2xl shadow-sm border border-gray-100">
+                            <h4 className="text-[#1796CF] font-bold text-lg mb-4 uppercase">Our Scientific Team</h4>
+                            <h2 className="text-3xl font-extrabold text-[#0B1521] mb-6">Who We Are</h2>
+                            <p className="text-[#5B5B5B] mb-8 text-lg">Our team includes:</p>
+
+                            <ul className="space-y-4">
+                                {[
+                                    "Medical writers with advanced life science degrees",
+                                    "Publication managers",
+                                    "Scientific editors",
+                                    "Literature review specialists",
+                                    "Quality reviewers"
+                                ].map((item, idx) => (
+                                    <li key={idx} className="flex items-start text-[#5B5B5B] text-lg">
+                                        <div className="w-2.5 h-2.5 rounded-full bg-[#1796CF] mt-2 mr-4 shrink-0" />
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        {/* Capabilities Section */}
+                        <div className="bg-[#0C2364] p-10 rounded-2xl shadow-xl border border-[#0C2364] text-white">
+                            <h4 className="text-[#1796CF] font-bold text-lg mb-4 uppercase">Our Capabilities</h4>
+                            <h2 className="text-3xl font-extrabold mb-8">What We Do</h2>
+
+                            <ul className="space-y-4">
+                                {[
+                                    "Scientific interpretation of clinical data",
+                                    "Statistical data presentation",
+                                    "Literature synthesis",
+                                    "Evidence communication",
+                                    "Scientific storytelling"
+                                ].map((item, idx) => (
+                                    <li key={idx} className="flex items-start text-white/90 text-lg">
+                                        <div className="w-2.5 h-2.5 rounded-full bg-[#1796CF] mt-2 mr-4 shrink-0" />
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>

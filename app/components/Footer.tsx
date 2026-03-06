@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Mail, Phone, Facebook, Linkedin, Twitter } from 'lucide-react';
 
 export default function Footer() {
@@ -11,13 +12,18 @@ export default function Footer() {
 
                     {/* Column 1: Brand + About */}
                     <div>
-                        <Link href="/" className="inline-flex items-center mb-4">
-                            <div className="text-2xl font-bold tracking-tight">
-                                <span className="text-[#1796CF] mr-1">X</span>Cytogenex
+                        <Link href="/" className="inline-flex items-center mb-6">
+                            <div className="relative w-[220px] h-[65px]">
+                                <Image
+                                    src="/logo.png"
+                                    alt="Cytogenex Logo"
+                                    fill
+                                    className="object-contain object-left brightness-0 invert"
+                                />
                             </div>
                         </Link>
                         <p className="text-white/70 text-[13px] leading-relaxed pr-4 mb-3">
-                            We are a contract research organization dedicated to providing comprehensive biometrics services including Clinical Data Management, statistical analysis and medical writing.
+                            Cytogenex is a specialized medical communication company providing high-quality scientific publications and medical writing support to pharmaceutical, biotechnology, and medical device companies worldwide.
                         </p>
                         <Link href="/about" className="inline-block text-[13px] font-bold text-white hover:text-[#1796CF] transition-colors duration-300">
                             Read More
@@ -29,10 +35,7 @@ export default function Footer() {
                         <h4 className="text-[13px] font-bold mb-5 uppercase tracking-wider">Reach Us</h4>
                         <div className="space-y-4 text-[13px] text-white/70 leading-relaxed">
                             <p>
-                                1204, Shilp Epitome, Behind Rajpath Club, Bodakdev, Ahmedabad – 380054
-                            </p>
-                            <p>
-                                A – 1004, Centrum Business Square, Wagle Industrial Estate, Thane (West) – 400604, Maharashtra, India.
+                                Bangalore, India
                             </p>
                             <p className="flex items-center">
                                 <Phone className="mr-2 shrink-0" size={14} />
@@ -67,7 +70,7 @@ export default function Footer() {
             {/* Bottom Sub-Footer - dark gray like Clinnex */}
             <div className="bg-[#212122] text-white/50 text-[11px] py-3 px-6 md:px-10 lg:px-16 flex flex-col md:flex-row items-center justify-between">
                 <div className="mb-2 md:mb-0 text-center md:text-left">
-                    <p>Copyright © {currentYear} Cytogenex Research Pvt. Ltd. | Designed by Innovations Beyond.</p>
+                    <p>Copyright © {currentYear} Cytogenex Research Pvt. Ltd.</p>
                 </div>
 
                 <div className="flex flex-wrap justify-center gap-3 text-white/60 font-medium">
@@ -75,7 +78,6 @@ export default function Footer() {
                     <Link href="/about" className="hover:text-white transition-colors">About Us</Link>
                     <Link href="/services" className="hover:text-white transition-colors">Services</Link>
                     <Link href="/expertise" className="hover:text-white transition-colors">Therapeutic Expertise</Link>
-                    <Link href="/blog" className="hover:text-white transition-colors">Blog</Link>
                     <Link href="/career" className="hover:text-white transition-colors">Career</Link>
                     <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
                 </div>
