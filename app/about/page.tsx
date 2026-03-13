@@ -12,7 +12,7 @@ export default function AboutPage() {
         <main className="min-h-screen bg-white pb-20">
             <PageBanner
                 title="About Us"
-                subtitle="A quality focused clinical research organisation."
+
             />
 
             <section className="py-24">
@@ -33,7 +33,7 @@ export default function AboutPage() {
                         </div>
                         <div className="lg:w-1/2 w-full aspect-[4/3] relative rounded-2xl overflow-hidden shadow-2xl">
                             <Image
-                                src="/about-us.png"
+                                src="/about-us-new.png"
                                 alt="About Cytogenex"
                                 fill
                                 className="object-cover"

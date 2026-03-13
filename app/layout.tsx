@@ -38,6 +38,11 @@ export const metadata: Metadata = {
     title: 'Cytogenex | Medical Communication & Scientific Publications',
     description: 'Specialized medical communication company delivering high-quality scientific publications and medical writing support globally.',
   },
+  icons: {
+    icon: '/new-logo.png',
+    shortcut: '/new-logo.png',
+  },
+  themeColor: '#1796CF',
 };
 
 export default function RootLayout({

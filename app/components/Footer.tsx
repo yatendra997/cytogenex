@@ -15,7 +15,7 @@ export default function Footer() {
                         <Link href="/" className="inline-flex items-center mb-6">
                             <div className="relative w-[220px] h-[65px]">
                                 <Image
-                                    src="/logo.png"
+src="/new-logo.png"
                                     alt="Cytogenex Logo"
                                     fill
                                     className="object-contain object-left brightness-0 invert"
@@ -39,7 +39,7 @@ export default function Footer() {
                             </p>
                             <p className="flex items-center">
                                 <Phone className="mr-2 shrink-0" size={14} />
-                                <a href="tel:+917946048633" className="hover:text-[#1796CF] transition-colors">+91 7946048633</a>
++91 919740182896
                             </p>
                             <p className="flex items-center">
                                 <Mail className="mr-2 shrink-0" size={14} />

@@ -77,9 +77,9 @@ export default function Header() {
                 <div className="flex items-center justify-between h-full">
                     {/* Logo - far left */}
                     <Link href="/" className="flex items-center">
-                        <div className="relative w-[160px] md:w-[210px] h-[46px] md:h-[60px]">
+                        <div className="relative w-[180px] md:w-[240px] h-[52px] md:h-[70px]">
                             <Image
-                                src="/logo.png"
+                                src="/new-logo.png"
                                 alt="Cytogenex Logo"
                                 fill
                                 className={`object-contain object-left transition-all duration-300 ${!needsSolidBg ? 'brightness-0 invert' : ''}`}
@@ -116,8 +116,7 @@ export default function Header() {
                                                 <Link
                                                     key={item.name}
                                                     href={item.href}
-                                                    className={`block px-5 py-3.5 text-[14px] font-medium text-[#1796CF] hover:bg-[#1796CF] hover:text-white transition-colors duration-200 ${index !== serviceDropdown.length - 1 ? 'border-b border-dashed border-[#1796CF]/40' : ''
-                                                        }`}
+                                                    className={`block px-5 py-3.5 text-[14px] font-medium text-[#1796CF] hover:bg-[#1796CF] hover:text-white transition-colors duration-200 ${index !== serviceDropdown.length - 1 ? 'border-b border-dashed border-[#1796CF]/40' : ''}`}
                                                 >
                                                     {item.name}
                                                 </Link>
