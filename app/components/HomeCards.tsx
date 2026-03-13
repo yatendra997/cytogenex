@@ -14,7 +14,7 @@ export default function HomeCards() {
                         Welcome to Cytogenex
                     </h4>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#0B1521] leading-tight mb-10">
-                        A quality focused medical communication company.
+                        Specialized Expertise in Scientific Publications
                     </h2>
                     <div>
                         <Link
