@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from './components/Header';
@@ -8,6 +8,7 @@ import ContactSidebar from './components/ContactSidebar';
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://cytogenex.com'),
   title: {
     default: 'Cytogenex | Medical Communication & Scientific Publications',
     template: '%s | Cytogenex',
@@ -42,6 +43,9 @@ export const metadata: Metadata = {
     icon: '/new-logo.png',
     shortcut: '/new-logo.png',
   },
+};
+
+export const viewport: Viewport = {
   themeColor: '#1796CF',
 };
 
