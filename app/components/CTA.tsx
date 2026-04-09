@@ -62,9 +62,8 @@ export default function CTA() {
                         </p>
                         <div className="space-y-3">
                             <div>
-                                <p className="text-[#1796CF] text-xs font-bold uppercase tracking-wider mb-1">General Inquiries</p>
-                                <a href="mailto:info@cytogenex.com" className="hover:text-[#1796CF] transition-colors block text-sm font-medium">info@cytogenex.com</a>
-                                <a href="mailto:inqueries@cytogenex.com" className="hover:text-[#1796CF] transition-colors block text-sm font-medium mt-1">inqueries@cytogenex.com</a>
+                                <p className="text-[#1796CF] text-xs font-bold uppercase tracking-wider mb-1">General Enquiries</p>
+                                <a href="mailto:enquiries@cytogenex.com" className="hover:text-[#1796CF] transition-colors block text-sm font-medium">enquiries@cytogenex.com</a>
                             </div>
                             <div className="pt-2">
                                 <p className="text-[#1796CF] text-xs font-bold uppercase tracking-wider mb-1">Business Development</p>

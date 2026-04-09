@@ -39,7 +39,7 @@ src="/new-logo.png"
                             </p>
                             <p className="flex items-center">
                                 <Phone className="mr-2 shrink-0" size={14} />
-+91 919740182896
+                                <a href="tel:+919740182896" className="hover:text-[#1796CF] transition-colors">+91 97401 82896</a>
                             </p>
                             <p className="flex items-center">
                                 <Mail className="mr-2 shrink-0" size={14} />
@@ -52,13 +52,13 @@ src="/new-logo.png"
                     <div>
                         <h4 className="text-[13px] font-bold mb-5 uppercase tracking-wider">Connect With Us</h4>
                         <div className="flex space-x-4">
-                            <a href="#" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-[#1796CF] hover:text-white transition-all duration-300">
+                            <a href="#" aria-label="Follow Cytogenex on Facebook" title="Facebook" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-[#1796CF] hover:text-white transition-all duration-300">
                                 <Facebook size={16} />
                             </a>
-                            <a href="#" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-[#1796CF] hover:text-white transition-all duration-300">
+                            <a href="#" aria-label="Follow Cytogenex on Twitter" title="Twitter / X" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-[#1796CF] hover:text-white transition-all duration-300">
                                 <Twitter size={16} />
                             </a>
-                            <a href="#" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-[#1796CF] hover:text-white transition-all duration-300">
+                            <a href="#" aria-label="Follow Cytogenex on LinkedIn" title="LinkedIn" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-[#1796CF] hover:text-white transition-all duration-300">
                                 <Linkedin size={16} />
                             </a>
                         </div>
