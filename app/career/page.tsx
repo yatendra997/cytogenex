@@ -198,7 +198,7 @@ export default function CareerPage() {
                 <p className="text-[#5B5B5B] mb-8 max-w-md">
                   Thank you, <strong>{fullName}</strong>! Your resume has been
                   successfully sent to{' '}
-                  <strong className="text-[#1796CF]">cytogenex2026@gmail.com</strong>.
+                  <strong className="text-[#1796CF]">info@cytogenex.com</strong>.
                   We&apos;ll be in touch if there&apos;s a suitable opportunity.
                 </p>
                 <button
