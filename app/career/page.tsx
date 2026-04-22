@@ -126,7 +126,7 @@ export default function CareerPage() {
       const message = err instanceof Error ? err.message : 'Unknown error';
       console.error('Submission error:', message);
       setErrorMsg(
-        'Failed to send your application. Please try again or email us directly at cytogenex2026@gmail.com',
+        'Failed to send your application. Please try again or email us directly at info@cytogenex.com',
       );
       setFormState('error');
     }
@@ -442,10 +442,10 @@ export default function CareerPage() {
                   <p className="text-center text-xs text-gray-400">
                     Or email us directly at{' '}
                     <a
-                      href="mailto:cytogenex2026@gmail.com"
+                      href="mailto:info@cytogenex.com"
                       className="text-[#1796CF] hover:underline font-medium"
                     >
-                      cytogenex2026@gmail.com
+                      info@cytogenex.com
                     </a>
                   </p>
                 </form>
